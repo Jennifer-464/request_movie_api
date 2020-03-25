@@ -1,0 +1,19 @@
+<%- include('templates/header') -%>
+    <div class='container'>
+        <div class='jumbotron'>
+            <h1>Search result</h1>
+            <button class="btn btn-info" onclick='location.href="/"'>Search Again</button>
+        </div>
+        
+        <ul id="book-list">
+            <%= data.title %>
+            <%= data.authors %>
+            <%= data.publishers %>
+            <%= data.publish_date %>
+            <%= data.cover %>
+            <%= data.number_of_pages %>
+        </ul>
+    </div>
+
+
+<%- include('templates/footer') -%>
